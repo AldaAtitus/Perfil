@@ -54,23 +54,26 @@ body {
 .comet {
     position: absolute;
     width: 3px;
-    height: 100px;
-    background: linear-gradient(to bottom, white, transparent);
+    height: 120px;
     opacity: 0.9;
     transform: rotate(-45deg);
-    animation: shoot 1.5s linear forwards;
+    animation: shoot 1.8s linear forwards;
 }
 
 .comet.blue {
-    background: linear-gradient(to bottom, #00f, transparent);
+    background: linear-gradient(to top, #00f, #8a2be2, transparent);
 }
 
 .comet.gold {
-    background: linear-gradient(to bottom, #ffd700, transparent);
+    background: linear-gradient(to top, #ffd700, #ff8c00, transparent);
 }
 
 .comet.red {
-    background: linear-gradient(to bottom, #f00, transparent);
+    background: linear-gradient(to top, #f00, #ff69b4, transparent);
+}
+
+.comet.green {
+    background: linear-gradient(to top, #0f0, #00ffff, transparent);
 }
 
 @keyframes shoot {
@@ -79,7 +82,7 @@ body {
         opacity: 1;
     }
     to {
-        transform: translate(300px, 300px) rotate(-45deg);
+        transform: translate(400px, -400px) rotate(-45deg);
         opacity: 0;
     }
 }
