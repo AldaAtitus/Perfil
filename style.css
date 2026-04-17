@@ -151,17 +151,6 @@ nav ul li a:hover {
   background: #444;
 }
 
-/* Botão */
-button {
-    margin-top: 10px;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background: #444;
-    color: #fff;
-}
-
 /* Conteúdo */
 main {
     padding: 20px;
