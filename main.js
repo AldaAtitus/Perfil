@@ -35,25 +35,25 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // --- Criar cometas coloridos aleatórios ---
-  function createComet() {
+    function createComet() {
     const comet = document.createElement("div");
     comet.classList.add("comet");
 
     // Escolhe cor aleatória
-    const colors = ["blue", "gold", "red"];
+    const colors = ["blue", "gold", "red", "green"];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     comet.classList.add(randomColor);
 
     // Posição inicial aleatória
-    comet.style.top = Math.random() * 80 + "%";
-    comet.style.left = Math.random() * 80 + "%";
+    comet.style.top = Math.random() * 70 + "%";
+    comet.style.left = Math.random() * 70 + "%";
 
     document.querySelector(".stars").appendChild(comet);
 
     // Remove depois da animação
     setTimeout(() => {
       comet.remove();
-    }, 1500);
+    }, 1800);
   }
 
   // Criar cometa a cada 3 segundos
