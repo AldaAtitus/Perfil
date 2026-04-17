@@ -50,6 +50,7 @@ body {
     to { opacity: 1; }
 }
 
+/* Camada dos Cometas */
 .comet {
     position: absolute;
     width: 3px;
@@ -60,7 +61,6 @@ body {
     animation: shoot 1.5s linear forwards;
 }
 
-/* Variações de cores */
 .comet.blue {
     background: linear-gradient(to bottom, #00f, transparent);
 }
