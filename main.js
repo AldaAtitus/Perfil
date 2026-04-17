@@ -23,24 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  // --- Tema escuro/claro ---
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme) {
-    document.body.classList.add(savedTheme);
-  }
-
-  const btnChangeTheme = document.getElementById("ChangeTheme");
-  btnChangeTheme.addEventListener("click", function() {
-    const body = document.body;
-    if (body.classList.contains("dark")) {
-      body.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    } else {
-      body.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    }
-  });
-
   // --- Criar estrelas no fundo ---
   const starsContainer = document.querySelector(".stars");
   for (let i = 0; i < 100; i++) {
