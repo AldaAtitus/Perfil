@@ -60,4 +60,3 @@ document.addEventListener("DOMContentLoaded", function() {
   setInterval(createComet, 3000);
 
 });
-
