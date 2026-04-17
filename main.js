@@ -33,5 +33,23 @@ document.addEventListener("DOMContentLoaded", function() {
     star.style.animationDuration = (Math.random() * 3 + 2) + "s";
     starsContainer.appendChild(star);
   }
+
+  // --- Criar cometas aleatórios ---
+  function createComet() {
+    const comet = document.createElement("div");
+    comet.classList.add("comet");
+    comet.style.top = Math.random() * 100 + "%";
+    comet.style.left = Math.random() * 100 + "%";
+    document.querySelector(".stars").appendChild(comet);
+
+    // Remove depois da animação
+    setTimeout(() => {
+      comet.remove();
+    }, 1000);
+  }
+
+  // Criar cometa a cada 5 segundos
+  setInterval(createComet, 3000);
+
 });
 
