@@ -23,3 +23,4 @@ Este repositório contém o código do meu site pessoal, criado para servir como
 ## 🌐 Publicação
 Este site pode ser acessado via **GitHub Pages** após a configuração no repositório.  
 Para visualizar, basta acessar:  
+https://aldaatitus.github.io/Perfil/
