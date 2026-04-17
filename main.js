@@ -34,21 +34,29 @@ document.addEventListener("DOMContentLoaded", function() {
     starsContainer.appendChild(star);
   }
 
-  // --- Criar cometas aleatórios ---
+  // --- Criar cometas coloridos aleatórios ---
   function createComet() {
     const comet = document.createElement("div");
     comet.classList.add("comet");
-    comet.style.top = Math.random() * 100 + "%";
-    comet.style.left = Math.random() * 100 + "%";
+
+    // Escolhe cor aleatória
+    const colors = ["blue", "gold", "red"];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    comet.classList.add(randomColor);
+
+    // Posição inicial aleatória
+    comet.style.top = Math.random() * 80 + "%";
+    comet.style.left = Math.random() * 80 + "%";
+
     document.querySelector(".stars").appendChild(comet);
 
     // Remove depois da animação
     setTimeout(() => {
       comet.remove();
-    }, 1000);
+    }, 1500);
   }
 
-  // Criar cometa a cada 5 segundos
+  // Criar cometa a cada 3 segundos
   setInterval(createComet, 3000);
 
 });
