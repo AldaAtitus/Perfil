@@ -53,13 +53,15 @@ body {
 /* Camada dos Cometas */
 .comet {
     position: absolute;
-    width: 3px;
+    width: 4px;
     height: 120px;
-    opacity: 0.9;
+    opacity: 1;
     transform: rotate(-45deg);
-    animation: shoot 1.8s linear forwards;
+    animation: shoot 2s linear forwards;
+    pointer-events: none;
 }
 
+/* Multicoloridos com degradê */
 .comet.blue {
     background: linear-gradient(to top, #00f, #8a2be2, transparent);
 }
@@ -82,7 +84,7 @@ body {
         opacity: 1;
     }
     to {
-        transform: translate(400px, -400px) rotate(-45deg);
+        transform: translate(400px, 400px) rotate(-45deg);
         opacity: 0;
     }
 }
