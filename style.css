@@ -176,6 +176,49 @@ section {
     to { opacity: 1; }
 }
 
+/* Ajustes para celular */
+@media (max-width: 600px) {
+  header {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .perfil {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+  }
+
+  main {
+    padding: 10px;
+    width: 95%;
+  }
+
+  section {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
 /* Rodapé */
 footer {
     text-align: center;
