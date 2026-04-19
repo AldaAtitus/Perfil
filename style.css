@@ -183,19 +183,31 @@ section {
     font-size: 14px;
   }
 
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
+   nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+   }
 
-  nav ul li {
-    margin: 5px 0;
-  }
+   nav ul li {
+    margin: 0 5px;
+    flex: 0 0 auto;
+   }
 
-  nav ul li a {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
+   nav ul li a {
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    white-space: nowrap;
+   }
 
   .perfil {
     width: 100px;
